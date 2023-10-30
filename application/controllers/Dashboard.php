@@ -16,7 +16,7 @@ class Dashboard extends CI_Controller {
 	{
 		$this->data['jns']=$this->db->count_all_results('tb_jenis_obat');
 		$this->data['obt']=$this->db->count_all_results('tb_obat');
-		$this->data['expired']=$this->db->query("SELECT count(id_obat) as id  from tb_obat  where tanggal_expired < CURRENT_DATE ")->row()->id;
+		$this->data['expired']=$this->db->query("SELECT count(id_obat) as id  from tb_obat  where tanggal_expired <= CURRENT_DATE ")->row()->id;
 		$this->data['no_expired']=$this->db->query("SELECT count(id_obat) as id  from tb_obat  where tanggal_expired > CURRENT_DATE ")->row()->id;
 		$this->data['user']=$this->db->count_all_results('tb_user');
 		$this->data['active']=$this->db->query("SELECT count(id_user) as id  from tb_user  where is_active='Aktif' ")->row()->id;
