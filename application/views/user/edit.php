@@ -27,14 +27,14 @@
                     <small class="form-text text-danger"><?= form_error('fullname'); ?></small>
                   </div>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="inputEmail3" class="col-sm-2 control-label">Password</label>
 
                   <div class="col-sm-10">
                     <input type="text" class="form-control" id="password" name="password" value="<?= $user['password'];?>">
                     <small class="form-text text-danger"><?= form_error('password'); ?></small>
                   </div>
-                </div>
+                </div> -->
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-2 control-label" >Is Active</label>
 

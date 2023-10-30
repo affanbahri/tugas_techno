@@ -90,7 +90,6 @@ class Obat_model extends CI_Model
     public function editUser(){
         $data = array(
             'username' => $this->input->post('username'),
-            'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
             'fullname' => $this->input->post('fullname'),
             'is_active' => $this->input->post('is_active'),
     );

@@ -48,7 +48,7 @@ class User extends CI_Controller{
         $this->data['user']=$this->Obat_model->DataUserId($id);
         // $this->data['jns']=$this->Obat_model->getJenis();
         $this->form_validation->set_rules('username','Username','required');
-        $this->form_validation->set_rules('password','Password','required');
+        // $this->form_validation->set_rules('password','Password','required');
         $this->form_validation->set_rules('fullname','Fullname','required');
         $this->form_validation->set_rules('is_active','Is Active','required');
         if($this->form_validation->run() ==FALSE){
